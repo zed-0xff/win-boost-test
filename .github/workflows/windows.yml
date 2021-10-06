@@ -19,7 +19,4 @@ jobs:
       - run: choco list -l
       - run: choco install -y boost-msvc-14.2
 
-      - run: dir c:\\boost
-      - run: dir c:\\boost\\boost
-
       - run: cmake .
