@@ -33,6 +33,6 @@ jobs:
 
       - run: dir c:\\boost
       - run: dir c:\\boost\\boost
-      - run: set
+      - run: echo %BOOST_ROOT%
 
       - run: cmake .
