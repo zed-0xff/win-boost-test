@@ -25,9 +25,10 @@ jobs:
           boost_install_dir: C:\\
 
       - run: |
-          echo "BOOST_INCLUDEDIR=C:\\boost" >> $GITHUB_ENV
+          echo "BOOST_INCLUDEDIR=C:\\boost\\boost" >> $GITHUB_ENV
+          echo "BOOST_LIBRARYDIR=C:\\boost\\boost\\lib" >> $GITHUB_ENV
+          echo "BOOST_ROOT=C:\\boost\\boost" >> $GITHUB_ENV
 
-      - run: echo $BOOST_ROOT
       - run: dir c:\\boost
       - run: dir c:\\boost\\boost
 
