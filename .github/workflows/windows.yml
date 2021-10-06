@@ -24,15 +24,7 @@ jobs:
           boost_version: 1.73.0
           boost_install_dir: C:\\
 
-      - run: |
-          echo "Boost_INCLUDE_DIR=C:\\boost\\boost" >> $GITHUB_ENV
-          echo "BOOST_INCLUDE_DIR=C:\\boost\\boost" >> $GITHUB_ENV
-          echo "BOOST_INCLUDEDIR=C:\\boost\\boost" >> $GITHUB_ENV
-          echo "BOOST_LIBRARYDIR=C:\\boost\\boost\\lib" >> $GITHUB_ENV
-          echo "BOOST_ROOT=C:\\boost\\boost" >> $GITHUB_ENV
-
       - run: dir c:\\boost
       - run: dir c:\\boost\\boost
-      - run: echo %BOOST_ROOT%
 
-      - run: cmake .
+      - run: cmake . -DBOOST_ROOT=C:/boost/boost
