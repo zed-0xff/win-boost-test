@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.15)
 
 project(TryOuts LANGUAGES CXX)
 
+include_directories(${Boost_INCLUDE_DIRS})
+
 find_package(Boost REQUIRED COMPONENTS program_options)
 
 if(NOT Boost_FOUND)
